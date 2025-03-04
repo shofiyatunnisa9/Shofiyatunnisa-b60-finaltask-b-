@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <h1> Provinsi & Kabupaten</h1>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Selection
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/list-provinsi">Provinsi</a></li>
+                <li><a class="dropdown-item" href="/list-kabupaten">Kabupaten</a></li>
+            </ul>
+        </div>
+        <div>
+            {{#if user}}
+            <span class="me-3">Selamat datang, {{user.name}}</span>
+            <a href="/logout" class="me-3">Logout</a>
+            {{/if}}
+            <a class="btn btn-primary {{#if (equal currentPage 'Add-Provinsi')}}active fw-bold{{/if}}"
+                href="/add-provinsi">Add Provinsi</a>
+            <a class="btn btn-primary {{#if (equal currentPage 'Add-Kabupaten')}}active fw-bold{{/if}}"
+                href="/add-kabupaten">Add Kabupaten</a>
+        </div>
+    </div>
+</nav>

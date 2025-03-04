@@ -1,0 +1,32 @@
+{{#> layout currentPage = 'Home'}}
+<div class="container mt-4">
+    <h2 class="text-center">Daftar Provinsi & Kabupaten</h2>
+
+    <div class="dropdown my-3 text-center">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Selection
+        </button>
+        <ul class="dropdown-menu">
+            {{#each provinsi}}
+            <li><a class="dropdown-item" href="/list-provinsi/{{id}}">{{nama}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+
+
+    <div class="row">
+        {{#each provinsi}}
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="{{photo}}" class="card-img-top" alt="{{nama}}">
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{nama}}</h5>
+                    <p class="card-text">{{diresmikan}}</p>
+                    <a href="/detail-provinsi/{{id}}" class="btn btn-primary">Detail</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{/layout}}

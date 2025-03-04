@@ -1,0 +1,34 @@
+<!-- LOGIN -->
+<form id="login-form" action="/login" method="post" class="create_blog_form">
+    <h4 class="mb-4">Welcome back ! Please Login</h4>
+
+
+    <div class="input-group mb-3">
+        <input name="email" id="email" type="email" class="form-control" aria-label="Sizing example input"
+            aria-describedby="email" placeholder="Email" style="border-radius: 40px;" required />
+        <i class="fa-solid fa-envelope"></i>
+    </div>
+    <div class="input-group mb-3">
+        <input name="password" id="password" type="password" class="form-control" aria-label="Sizing example input"
+            aria-describedby="password" placeholder="Password" style="border-radius: 40px;" required />
+        <i class="fa-solid fa-lock"></i>
+    </div>
+    <div class="register-link">
+        <p> Don't have an account? <a href="/register">Register</a></p>
+
+    </div>
+    {{#if messages.error}}
+    <div class="alert alert-danger" role="alert">
+        {{messages.error}}
+    </div>
+    {{/if}}
+    {{#if messages.success}}
+    <div class="alert alert-success" role="alert">
+        {{messages.success}}
+    </div>
+    {{/if}}
+    <div class="text-center mt-6">
+        <button style="height: auto;" class="btn btn-black" type="submit">Login</button>
+    </div>
+
+</form>
