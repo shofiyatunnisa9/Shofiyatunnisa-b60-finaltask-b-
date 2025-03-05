@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* nav{
+    background-color: #f5f2f2;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px !important;
+
+} */
 body {
     background-color: black;
     color: white;
@@ -18,9 +25,29 @@ body {
     cursor: pointer;
     margin: 10px;
 }
+.list-index{
+    width: 80% !important;
+    margin: 30px auto;
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 20px !important;
+}
+.list-index img{
+    width: 30px auto !important;
+}
+/* .dropdown{
+    display: block;
+} */
+ #form-provinsi{
+     width: 30%;
+     padding: 15px auto;
+     
+     margin: auto;
+    
+ }
 #login-form {
 
-    width: 420px;
+    width: 30% !important;
     background-color: #d3d3d3;
     border-radius: 20px;
     box-shadow: 10px;
@@ -42,9 +69,21 @@ body {
     right: 20px;
     top: 50%;
 }
+#login-form button{
+    text-decoration: none;
+    background-color: rgb(40, 140, 221);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Poppins", serif;
+    cursor: pointer;
+}
 
 #register-form {
-    width: 420px;
+    width: 30%;
     background-color: #d3d3d3;
     border-radius: 20px;
     box-shadow: 10px;

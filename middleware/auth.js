@@ -1,6 +1,6 @@
 function chechUser(req, res, next) {
-  const user = req.session.user;
-  if (!user) {
+  const user_tb = req.session.user_tb;
+  if (!user_tb) {
     req.flash("error", "Please login");
     return res.redirect("/login");
   }

@@ -9,13 +9,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Provinsi_tb.belongsTo(models.User, {
+      Provinsi_tb.belongsTo(models.User_tb, {
         foreignKey: "user_id",
-        as: "user",
+        as: "user_tb",
         onDelete: "SET NULL",
         onUpdate: "CASCADE",
       });
-      Provinsi_tb.hasMany(models.kabupaten_tb, {
+      Provinsi_tb.hasMany(models.Kabupaten_tb, {
         foreignKey: "provinsi_id",
         as: "kabupaten_tb",
       });

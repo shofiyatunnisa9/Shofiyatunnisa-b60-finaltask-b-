@@ -1,9 +1,10 @@
+{{#> layout currentPage="Register"}}
 <!-- Register -->
 <form id="register-form" action="/register" method="post" class="register-form">
     <h2 class="mb-4">Registration</h2>
     <div class="input-group mb-3">
-        <input name="name" id="name" type="text" class="form-control" aria-label="Sizing example input"
-            aria-describedby="name" placeholder="Name" style="border-radius: 40px;" required />
+        <input name="username" id="username" type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="username" placeholder="Name" style="border-radius: 40px;" required />
         <i class="fa-solid fa-user"></i>
     </div>
 
@@ -29,7 +30,8 @@
     </div>
     {{/if}}
     <div class="text-center mt-4">
-        <button style="height: auto;" class="btn btn-black" type="submit">Register</button>
+        <button style="height: auto;" class="btn btn-primary" type="submit">Register</button>
     </div>
 
 </form>
+{{/layout}}

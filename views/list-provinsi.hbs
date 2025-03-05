@@ -1,0 +1,39 @@
+{{#> layout currentPage = 'Provinsi List'}}
+<article>
+    <div action="/list-provinsi" class="list-index" style="display: flex; gap: 20px; padding: 20px;">
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="/img/sumbar.png" class="card-img-top" alt="photo">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sumatera Barat</h5>
+                    <p class="card-text" style="color: gray;">1 Oktober 1945</p>
+                    <a href="/detail-provinsi/{{id}}" class="btn btn-primary">Detail</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="/img/jabar.png" class="card-img-top" alt="photo">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Jawa Barat</h5>
+                    <p class="card-text" style="color: gray;">17 Agustus 1945</p>
+                    <a href="/detail-provinsi/{{id}}" class="btn btn-primary">Detail</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="/img/jateng.png" class="card-img-top" alt="photo">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Jawa Tengah</h5>
+                    <p class="card-text" style="color: gray;">04 Juli 1950</p>
+                    <a href="/detail-provinsi/{{id}}" class="btn btn-primary">Detail</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</article>
+{{/layout}}

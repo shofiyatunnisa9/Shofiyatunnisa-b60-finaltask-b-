@@ -1,0 +1,23 @@
+{{#> layout currentPage = 'Add Kabupaten'}}
+<form class="row g-3 add-kabupaten" id="form-provinsi" action="/add-kabupaten" method="POST"
+    enctype="multipart/form-data">
+
+    <h2 style="text-align: center;">Add Kabupaten</h2>
+    <div class="col-12 form_field">
+        <label for="nama" class="form-label fw-bold">Nama Kabupaten</label>
+        <input name="nama" type="text" class="form-control" id="inputNameProvinsi" required>
+    </div>
+    <div class="col-md-6 form_field ">
+        <label for="diresmikan" class="form-label fw-bold">Diresmikan</label>
+        <input name="diresmikan" type="date" class="form-control" id="diresmikan" required>
+    </div>
+
+    <div class="col-12 form_field">
+        <label for="photo" class="form-label fw-bold">Photo</label>
+        <input name="photo" type="file" class="form-control" id="uploadImage" required>
+    </div>
+    <div class="col-12 button_container" id="project-button">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+{{/layout}}

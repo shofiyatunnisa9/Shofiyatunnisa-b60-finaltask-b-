@@ -11,6 +11,7 @@ module.exports = {
      *   name: 'John Doe',
      *   isBetaMember: false
      * }], {});
+     *
      */
     return queryInterface.bulkInsert("Provinsi_tbs", [
       {

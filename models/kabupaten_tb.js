@@ -15,6 +15,12 @@ module.exports = (sequelize, DataTypes) => {
         onDelete: "SET NULL",
         onUpdate: "CASCADE",
       });
+      // Kabupaten_tb.belongsTo(models.User_tb, {
+      //   foreignKey: "user_id",
+      //   as: "user_tb",
+      //   onDelete: "SET NULL",
+      //   onUpdate: "CASCADE",
+      // });
     }
   }
   Kabupaten_tb.init(

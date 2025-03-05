@@ -1,0 +1,29 @@
+{{#> layout currentPage = 'Kabupaten List'}}
+<article>
+    <div action="/list-kabupaten" class="list-index" style="display: flex; gap: 20px; padding: 20px;">
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="/img/sumbar.png" class="card-img-top" alt="photo">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Solok</h5>
+                    <p class="card-text" style="color: gray;">1 Oktober 1945</p>
+                    <a href="/detail-provinsi/{{id}}" class="btn btn-primary">Detail</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="/img/jabar.png" class="card-img-top" alt="photo">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Bandung</h5>
+                    <p class="card-text" style="color: gray;">17 Agustus 1945</p>
+                    <a href="/detail-provinsi/{{id}}" class="btn btn-primary">Detail</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</article>
+{{/layout}}
